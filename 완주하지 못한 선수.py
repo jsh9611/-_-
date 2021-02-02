@@ -9,4 +9,3 @@ def solution(participant, completion):
                 return participant[i]
             return participant[i+1]       
     return participant[i+1]
-    
