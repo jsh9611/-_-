@@ -13,6 +13,6 @@ def factorial_recursive(n):
         return 1
     return n * factorial_recursive(n-1)
 
-# n! 출력
+# 두가지 방식의 n! 출력
 print('반복적으로 구현:', factorial_iterative(5))
 print('재귀적으로 구현:', factorial_recursive(5))
