@@ -26,6 +26,6 @@ sum = [0]*n
 for i in range(n):
     for j in range(n):
         sum[j] += graph[i][j]
-
+# print(sum) 
 # 비용이 가장 적은 노드중 index가 가장 작은 것을 구한다
 print(sum.index(min(sum))+1)

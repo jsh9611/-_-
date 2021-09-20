@@ -14,17 +14,21 @@ for i in range(1,len_b+1):
             lcs_list[i][j] = lcs_list[i-1][j-1] + 1
         else:
             lcs_list[i][j] = max(lcs_list[i-1][j], lcs_list[i][j-1])
-            
-for i in range(len_b,0,-1):
-    for j in range(len_a,0,-1):
-        if lcs_list[i-1][j] == lcs_list[i][j-1] == lcs_list[i][j]:
-            break
-        elif lcs_list[i-1][j] == lcs_list[i][j-1]:
-            count += 1
-            break
-        else:
-            continue
-print(count)
+
+print(lcs_list)
+print()
+print(max(max(lcs_list)))
+print()
+# for i in range(len_b,0,-1):
+#     for j in range(len_a,0,-1):
+#         if lcs_list[i-1][j] == lcs_list[i][j-1] == lcs_list[i][j]:
+#             break
+#         elif lcs_list[i-1][j] == lcs_list[i][j-1]:
+#             count += 1
+#             break
+#         else:
+#             continue
+# print(count)
 
 
 

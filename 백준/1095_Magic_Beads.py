@@ -19,7 +19,6 @@ def factorial2(num,b):
             res *= i
         return res
     
-
 # N = factorial(S+F)/factorial(S)*factorial(F)
 N = factorial2(S+F,S+1)/factorial(F)
 

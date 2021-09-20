@@ -38,7 +38,7 @@ for i in range(T):
         # 출발점만 행성 궤도에 갇힌 경우
         if (o1 < r3):
             count += 1
-        # 도착점만 행성 궤도에 갇힌 경우
+        # 도착점만 행성 궤도에 갇힌 경우 
         if (o2 < r3):
             count += 1
     print(count)
